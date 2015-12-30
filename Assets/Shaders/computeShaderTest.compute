@@ -1,0 +1,50 @@
+﻿#pragma kernel CSMain
+ 
+ #define threadX 4
+ #define threadY 4
+ #define threadZ 4
+ 
+ #define strideX 32
+ #define strideY 32
+ #define strideZ 32
+
+ #define gridX (threadX * strideX)
+ #define gridY (threadY * strideY)
+ #define gridZ (threadZ * strideZ)
+
+ 
+float _Time;
+float _Delta;
+float3 _Hand1Pos;
+float3 _Hand2Pos;
+
+struct Vert {
+    float3 pos;
+    float3 vel;
+};
+
+RWStructuredBuffer<Vert> vertBuffer;
+
+[numthreads(threadX,threadY,threadZ)]
+void CSMain (uint3 id : SV_DispatchThreadID) {
+
+  int pID = id.x + id.y * gridX + id.z * gridX * gridY;
+
+  Vert vert = vertBuffer[pID];
+  float mass = abs(sin( float( pID ) ));
+
+  float3 h1Dir = _Hand1Pos - vert.pos;
+  float3 h2Dir = _Hand2Pos - vert.pos;
+  float3 force = (pow(length( h1Dir),2)) * normalize( h1Dir);
+  force += (pow(length( h2Dir),2)) * normalize( h2Dir);
+
+  vert.vel += force / (10000. *mass);
+  vert.vel *= .999;
+
+  vert.pos += vert.vel ;
+
+
+
+  vertBuffer[pID] = vert;
+
+}

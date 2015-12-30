@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: b47fc87c36b884185bfa1c65087a652f
+timeCreated: 1450131715
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Group54445
+    100002: Group54445_MeshPart0
+    100004: Group54445_MeshPart1
+    100006: Group54445_MeshPart10
+    100008: Group54445_MeshPart11
+    100010: Group54445_MeshPart12
+    100012: Group54445_MeshPart13
+    100014: Group54445_MeshPart14
+    100016: Group54445_MeshPart15
+    100018: Group54445_MeshPart16
+    100020: Group54445_MeshPart17
+    100022: Group54445_MeshPart18
+    100024: Group54445_MeshPart2
+    100026: Group54445_MeshPart3
+    100028: Group54445_MeshPart4
+    100030: Group54445_MeshPart5
+    100032: Group54445_MeshPart6
+    100034: Group54445_MeshPart7
+    100036: Group54445_MeshPart8
+    100038: Group54445_MeshPart9
+    100040: //RootNode
+    400000: Group54445
+    400002: Group54445_MeshPart0
+    400004: Group54445_MeshPart1
+    400006: Group54445_MeshPart10
+    400008: Group54445_MeshPart11
+    400010: Group54445_MeshPart12
+    400012: Group54445_MeshPart13
+    400014: Group54445_MeshPart14
+    400016: Group54445_MeshPart15
+    400018: Group54445_MeshPart16
+    400020: Group54445_MeshPart17
+    400022: Group54445_MeshPart18
+    400024: Group54445_MeshPart2
+    400026: Group54445_MeshPart3
+    400028: Group54445_MeshPart4
+    400030: Group54445_MeshPart5
+    400032: Group54445_MeshPart6
+    400034: Group54445_MeshPart7
+    400036: Group54445_MeshPart8
+    400038: Group54445_MeshPart9
+    400040: //RootNode
+    2300000: Group54445_MeshPart0
+    2300002: Group54445_MeshPart1
+    2300004: Group54445_MeshPart10
+    2300006: Group54445_MeshPart11
+    2300008: Group54445_MeshPart12
+    2300010: Group54445_MeshPart13
+    2300012: Group54445_MeshPart14
+    2300014: Group54445_MeshPart15
+    2300016: Group54445_MeshPart16
+    2300018: Group54445_MeshPart17
+    2300020: Group54445_MeshPart18
+    2300022: Group54445_MeshPart2
+    2300024: Group54445_MeshPart3
+    2300026: Group54445_MeshPart4
+    2300028: Group54445_MeshPart5
+    2300030: Group54445_MeshPart6
+    2300032: Group54445_MeshPart7
+    2300034: Group54445_MeshPart8
+    2300036: Group54445_MeshPart9
+    3300000: Group54445_MeshPart0
+    3300002: Group54445_MeshPart1
+    3300004: Group54445_MeshPart10
+    3300006: Group54445_MeshPart11
+    3300008: Group54445_MeshPart12
+    3300010: Group54445_MeshPart13
+    3300012: Group54445_MeshPart14
+    3300014: Group54445_MeshPart15
+    3300016: Group54445_MeshPart16
+    3300018: Group54445_MeshPart17
+    3300020: Group54445_MeshPart18
+    3300022: Group54445_MeshPart2
+    3300024: Group54445_MeshPart3
+    3300026: Group54445_MeshPart4
+    3300028: Group54445_MeshPart5
+    3300030: Group54445_MeshPart6
+    3300032: Group54445_MeshPart7
+    3300034: Group54445_MeshPart8
+    3300036: Group54445_MeshPart9
+    4300000: Group54445_MeshPart0
+    4300002: Group54445_MeshPart1
+    4300004: Group54445_MeshPart2
+    4300006: Group54445_MeshPart3
+    4300008: Group54445_MeshPart4
+    4300010: Group54445_MeshPart5
+    4300012: Group54445_MeshPart6
+    4300014: Group54445_MeshPart7
+    4300016: Group54445_MeshPart8
+    4300018: Group54445_MeshPart9
+    4300020: Group54445_MeshPart10
+    4300022: Group54445_MeshPart11
+    4300024: Group54445_MeshPart12
+    4300026: Group54445_MeshPart13
+    4300028: Group54445_MeshPart14
+    4300030: Group54445_MeshPart15
+    4300032: Group54445_MeshPart16
+    4300034: Group54445_MeshPart17
+    4300036: Group54445_MeshPart18
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,132 @@
+﻿#pragma kernel CSMain
+ 
+ #define threadX 4
+ #define threadY 4
+ #define threadZ 4
+ 
+ #define strideX 8
+ #define strideY 8
+ #define strideZ 8
+
+ #define gridX (threadX * strideX)
+ #define gridY (threadY * strideY)
+ #define gridZ (threadZ * strideZ)
+
+ 
+float _Time;
+float _Delta;
+float3 _Hand;
+float  _Drawing;
+sampler2D _Audio;
+
+float radius = .4;
+
+struct Vert {
+
+    float3 pos;
+    float3 vel;
+    float3 nor;
+    float2 uv;
+    float  ribbonID;
+    float  life; 
+    float3 debug;
+
+};
+
+struct Pos {
+
+    float3 pos;
+    float3 vel;
+    float3 nor;
+    float2 uv;
+    float  ribbonID;
+    float  life; 
+    float3 debug;
+
+};
+
+
+float3 springForce( float3 p1 , float3 p2 , float d ){
+
+  float3 dir = p1 - p2;
+  float l = length( dir );
+  dir = normalize( dir );
+
+  float dif = l - d;
+
+  return dif * dif * float(sign(dif)) * -dir;
+
+}
+
+RWStructuredBuffer<Vert> vertBuffer;
+RWStructuredBuffer<Pos> ogBuffer;
+
+[numthreads(threadX,threadY,threadZ)]
+void CSMain (uint3 id : SV_DispatchThreadID) {
+  
+  int total = gridX * gridY * gridZ;
+  
+  int pID = id.x + id.y * gridX + id.z * gridX * gridY;
+
+
+  Vert vert = vertBuffer[pID];
+  vert.debug = float3( 1. , 1. , 1. );
+
+  if( vert.life > -20. ){
+
+    int bID = int(floor( pID / 8) * 8);
+
+    int uID = pID + 8;
+    if( uID > total ){ uID - total; }
+
+    int dID = pID - 8;
+    if( dID < 0 ){ dID + total; }
+
+    int lID = pID - 1;
+    if( lID < bID ){ lID + 8; }
+
+    int rID = pID + 1;
+    if( rID > bID + 8 ){ rID - 8; }
+
+    int oID = pID + 4;
+    if( oID > bID + 8 ){ oID - 8; }
+
+
+
+    Vert up   = vertBuffer[uID];
+    Vert down = vertBuffer[dID];
+    //Vert left = vertBuffer[lID];
+    //Vert rite = vertBuffer[rID];
+    Vert oppo = vertBuffer[oID];
+
+    float springDistance = 2 * 3.14159 * radius / 8;
+
+    float3 force = float3( 0 , 0 , 0 );
+
+    force += springForce( vert.pos , up.pos   , 1. / 4096 );
+    force += springForce( vert.pos , down.pos , 1. / 4096 );
+    //force += springForce( vert.pos , left.pos , springDistance );
+    //force += springForce( vert.pos , rite.pos , springDistance );
+    //force += springForce( vert.pos , oppo.pos , radius * 2. );
+
+    vert.vel += force* 100000.;
+    vert.vel *= .999;
+
+    vert.pos += vert.vel ;
+
+    vert.nor = normalize( oppo.pos - vert.pos );
+
+    vert.debug = float3( vert.uv.x / 8. , .5 , vert.uv.y / 4096. );
+
+  }else{
+
+    vert.debug = float3( 0. , 1. , 0. );
+  
+  }
+
+
+
+
+  vertBuffer[pID] = vert;
+
+}

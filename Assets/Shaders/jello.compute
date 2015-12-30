@@ -1,0 +1,122 @@
+﻿#pragma kernel CSMain
+ 
+ #define threadX 4
+ #define threadY 4
+ #define threadZ 4
+ 
+ #define strideX 8
+ #define strideY 8
+ #define strideZ 8
+
+ #define gridX (threadX * strideX)
+ #define gridY (threadY * strideY)
+ #define gridZ (threadZ * strideZ)
+
+ 
+float _Time;
+float _Delta;
+float3 _HandL;
+float3 _HandR;
+float  _Drawing;
+
+float radius = .4;
+
+struct Vert {
+
+    float3 pos;
+    float3 vel;
+    float3 nor;
+    float2 uv;
+    float  ribbonID;
+    float  life; 
+    float3 debug;
+
+};
+
+struct Pos {
+
+    float3 pos;
+
+
+};
+
+
+float3 springForce( float3 p1 , float3 p2 , float d ){
+
+  float3 dir = p1 - p2;
+  float l = length( dir );
+  dir = normalize( dir );
+
+  float dif = l - d;
+
+  return dif * dif * float(sign(dif)) * -dir;
+
+}
+
+float3 handForce( float3 p1 , float3 p2 , float d ){
+
+  float3 dir = p1 - p2;
+  float l = length( dir );
+  dir = normalize( dir );
+
+  float dif = 0.;
+  if( l < d ){
+
+    dif = (d-l)/ d;
+  }
+
+  return dif * -dir;
+
+}
+
+
+RWStructuredBuffer<Vert> vertBuffer;
+RWStructuredBuffer<Pos> ogBuffer;
+Texture2D<float4> _Audio;
+
+[numthreads(threadX,threadY,threadZ)]
+void CSMain (uint3 id : SV_DispatchThreadID) {
+  
+  int total = gridX * gridY * gridZ;
+  
+  int pID = id.x + id.y * gridX + id.z * gridX * gridY;
+  
+  int bID = int(floor( pID / 8) * 8);
+  int oID = pID + 4;
+  if( oID > bID + 8 ){ oID - 8; }
+
+  Vert vert = vertBuffer[pID];
+  Pos og = ogBuffer[pID];
+
+  Vert oppo = vertBuffer[oID];
+
+  vert.debug = float3( 1. , 1. , 1. );
+
+
+
+  float springDistance = 2 * 3.14159 * radius / 8;
+
+  float3 force = float3( 0 , 0 , 0 );
+  float4 audio = _Audio[float2(abs(sin(vert.uv.y * 20.)) * 64.,0)];
+
+  force +=  springForce( vert.pos , og.pos   , 0. );
+  //force += float3( 0. , 1. , 0.) * length( audio );
+
+  force += .1 * handForce( vert.pos , _HandR , 0.5 );
+  force += .1 * handForce( vert.pos , _HandL , 0.5 );
+
+
+  vert.vel += force * .01;
+  vert.vel *= .95;
+  //vert.vel += vert.vel * length(audio) * 1.;
+
+  vert.pos += vert.vel ;
+
+  vert.nor = normalize( oppo.pos - vert.pos );
+
+
+
+
+  vertBuffer[pID] = vert;
+
+}
