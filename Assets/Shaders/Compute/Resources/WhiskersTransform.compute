@@ -1,0 +1,167 @@
+﻿#pragma kernel CSMain
+ 
+
+
+ 
+float _Time;
+float _Delta;
+float3 _HandL;
+float3 _HandR;
+float  _Drawing;
+
+float3 _Interface;
+
+float radius = .4;
+uint _ThreadSize;
+uint _StrideSize;
+
+#define threadX 6
+#define threadY 6
+#define threadZ 6
+
+#define strideX 4
+#define strideY 4
+#define strideZ 4
+
+#define gridX (threadX * strideX)
+#define gridY (threadY * strideY)
+#define gridZ (threadZ * strideZ)
+
+
+
+
+struct Vert {
+
+    float3 pos;
+    float3 vel;
+    float3 nor;
+    float2 uv;
+    float  ribbonID;
+    float  life; 
+    float3 debug;
+
+};
+
+struct Pos {
+
+    float3 pos;
+
+
+};
+
+float3 springForce( float3 p1 , float3 p2 , float d ){
+
+  float3 dir = p1 - p2;
+  float l = length( dir );
+  dir = normalize( dir );
+
+  float dif = l - d;
+
+  return dif * dif * float(sign(dif)) * -dir;
+
+}
+
+
+float sdBox( float3 p)
+{
+  float3 b = float3( 1. , 1. , 1. );
+  float3 d = abs(p) - b;
+  return min(max(d.x,max(d.y,d.z)),0.0) +
+         length(max(d,0.0));
+}
+
+float3 calcNormal( in float3 pos){
+  float3 eps = float3(0.001 , 0.0,0.0);
+  return normalize( float3(
+           sdBox(pos+eps.xyy) - sdBox(pos-eps.xyy),
+           sdBox(pos+eps.yxy) - sdBox(pos-eps.yxy),
+           sdBox(pos+eps.yyx) - sdBox(pos-eps.yyx) ) );
+}
+
+RWStructuredBuffer<Vert> vertBuffer;
+RWStructuredBuffer<Pos> ogBuffer;
+Texture2D<float4> _Audio;
+RWStructuredBuffer<float4x4> transBuffer;
+
+[numthreads(threadX,threadY,threadZ)]
+void CSMain (uint3 id : SV_DispatchThreadID) {
+  
+  int total = gridX * gridY * gridZ;
+  
+  int pID = id.x + id.y * gridX + id.z * gridX * gridY;
+  
+  Vert vert = vertBuffer[pID];
+  Pos og = ogBuffer[pID];
+  
+  int stalkVal = pID % 8;
+
+  float3 force = float3( 0. , 0., 0.);
+
+  if( stalkVal == 0 ){
+
+    float3 newPos = mul( transBuffer[0] , float4( og.pos , 1.) ).xyz;
+
+
+    //vert.pos =  mul( transBuffer[0] , float4( og.pos , 1.) ).xyz;
+
+    force += 40.1 * springForce( vert.pos , newPos , .00000001 );
+    vert.vel *= .98;
+
+  }else{
+
+    Vert down = vertBuffer[pID-1];
+
+
+    float3 sdPos = mul( transBuffer[1] , float4( vert.pos , 1.)).xyz;
+
+    float dist = sdBox( sdPos );
+
+    //vert.debug.x = dist;
+
+
+    //float3 upForce = calcNormal( sdPos );
+    float3 upForce =  mul( transBuffer[0] , float4( vert.debug, 0.) ).xyz; //vert.debug;
+    force += upForce * .01;//  + _Interface.z * .003;
+
+
+    force += 40.0 * springForce( vert.pos , down.pos , .0000001 );
+
+
+    if( stalkVal != 7 ){
+      Vert up = vertBuffer[pID+1];
+      force += 40.0 * springForce( vert.pos , up.pos , .0000001 );
+    }
+
+
+  }
+
+    float3 handR = _HandR - vert.pos;
+    float lR = length( handR );
+    handR = normalize( handR );
+    if( lR < .1 + _Interface.y * .1){
+      force -=.05 *  handR * (.002+ _Interface.y * .002) / lR; 
+    }
+
+    float3 handL = _HandL - vert.pos;
+    float lL = length( handL );
+    handL = normalize( handL );
+    if( lL < .1 + _Interface.y * .1){
+      force -= .05 * handL * (.002+ _Interface.y * .002) / lL; 
+    }
+
+
+    vert.vel += force * .03;
+    if( length( vert.vel) > .03 ){ vert.vel = normalize( vert.vel ) * .03;}
+    vert.pos += vert.vel;
+
+    //vert.vel *= .95 + _Interface.x * .05;
+    vert.vel *= .99;
+
+
+  //vert.pos = og.pos;
+
+
+
+  vertBuffer[pID] = vert;
+
+}

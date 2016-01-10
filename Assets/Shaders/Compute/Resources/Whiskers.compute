@@ -1,0 +1,116 @@
+﻿#pragma kernel CSMain
+ 
+ #define threadX 8
+ #define threadY 8
+ #define threadZ 8
+
+ #define strideX 12
+ #define strideY 12
+ #define strideZ 12
+
+ #define gridX (threadX * strideX)
+ #define gridY (threadY * strideY)
+ #define gridZ (threadZ * strideZ)
+
+ 
+float _Time;
+float _Delta;
+float3 _HandL;
+float3 _HandR;
+float  _Drawing;
+
+float3 _Interface;
+
+float radius = .4;
+
+struct Vert {
+
+    float3 pos;
+    float3 vel;
+    float3 nor;
+    float2 uv;
+    float  ribbonID;
+    float  life; 
+    float3 debug;
+
+};
+
+struct Pos {
+
+    float3 pos;
+
+
+};
+
+float3 springForce( float3 p1 , float3 p2 , float d ){
+
+  float3 dir = p1 - p2;
+  float l = length( dir );
+  dir = normalize( dir );
+
+  float dif = l - d;
+
+  return dif * dif * float(sign(dif)) * -dir;
+
+}
+
+
+RWStructuredBuffer<Vert> vertBuffer;
+RWStructuredBuffer<Pos> ogBuffer;
+Texture2D<float4> _Audio;
+
+[numthreads(threadX,threadY,threadZ)]
+void CSMain (uint3 id : SV_DispatchThreadID) {
+  
+  int total = gridX * gridY * gridZ;
+  
+  int pID = id.x + id.y * gridX + id.z * gridX * gridY;
+  
+  Vert vert = vertBuffer[pID];
+  Pos og = ogBuffer[pID];
+  
+  int stalkVal = pID % 8;
+
+  if( stalkVal == 0 ){
+
+  }else{
+
+    Vert down = vertBuffer[pID-1];
+    float3 force = float3( 0. , 0., 0.);
+
+    force += float3( 0. , .001  + _Interface.z * .003, 0. );
+    force += 4.0 * springForce( vert.pos , down.pos , .0000001 );
+
+
+    if( stalkVal != 7 ){
+      Vert up = vertBuffer[pID+1];
+      force += 4.0 * springForce( vert.pos , up.pos , .0000001 );
+    }
+
+    float3 handR = _HandR - vert.pos;
+    float lR = length( handR );
+    handR = normalize( handR );
+    if( lR < .1 + _Interface.y * .1){
+      force -= handR * (.002+ _Interface.y * .002); 
+    }
+
+    float3 handL = _HandL - vert.pos;
+    float lL = length( handL );
+    handL = normalize( handL );
+    if( lL < .1 + _Interface.y * .1){
+      force -= handL * (.002+ _Interface.y * .002); 
+    }
+
+    vert.vel += force * .03;
+    vert.pos += vert.vel;
+
+    vert.vel *= .95 + _Interface.x * .05;
+
+
+  }
+
+
+
+  vertBuffer[pID] = vert;
+
+}

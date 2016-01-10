@@ -45,26 +45,35 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AddWhiskerBox.cs" />
      <Compile Include="Assets\OSPNative\scenes\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\OSPNative\scripts\ONSPAudioSource.cs" />
-     <Compile Include="Assets\Scripts\CreatePlane.cs" />
-     <Compile Include="Assets\Scripts\EventManager.cs" />
-     <Compile Include="Assets\Scripts\Interface.cs" />
-     <Compile Include="Assets\Scripts\MoveByController.cs" />
-     <Compile Include="Assets\Scripts\MoveParent.cs" />
-     <Compile Include="Assets\Scripts\RibbonXY.cs" />
-     <Compile Include="Assets\Scripts\Ribbons.cs" />
-     <Compile Include="Assets\Scripts\Select3D.cs" />
-     <Compile Include="Assets\Scripts\SetColorFromValue.cs" />
-     <Compile Include="Assets\Scripts\Slider.cs" />
-     <Compile Include="Assets\Scripts\TurnOffHat.cs" />
-     <Compile Include="Assets\Scripts\Whiskers.cs" />
-     <Compile Include="Assets\Scripts\audioSourceTexture.cs" />
-     <Compile Include="Assets\Scripts\controllerInfo.cs" />
-     <Compile Include="Assets\Scripts\copyPosition.cs" />
-     <Compile Include="Assets\Scripts\micInput.cs" />
-     <Compile Include="Assets\Scripts\micInput2.cs" />
-     <Compile Include="Assets\Scripts\setAudioSourceTexture.cs" />
+     <Compile Include="Assets\Scripts\AudioScripts\audioSourceTexture.cs" />
+     <Compile Include="Assets\Scripts\AudioScripts\micInput.cs" />
+     <Compile Include="Assets\Scripts\AudioScripts\micInput2.cs" />
+     <Compile Include="Assets\Scripts\AudioScripts\setAudioSourceTexture.cs" />
+     <Compile Include="Assets\Scripts\GooScripts\CreatePlane.cs" />
+     <Compile Include="Assets\Scripts\GooScripts\RibbonXY.cs" />
+     <Compile Include="Assets\Scripts\GooScripts\Ribbons.cs" />
+     <Compile Include="Assets\Scripts\InterfaceScripts\Interface.cs" />
+     <Compile Include="Assets\Scripts\InterfaceScripts\Select3D.cs" />
+     <Compile Include="Assets\Scripts\InterfaceScripts\SetColorFromValue.cs" />
+     <Compile Include="Assets\Scripts\InterfaceScripts\Slider.cs" />
+     <Compile Include="Assets\Scripts\MouseCameraControl.cs" />
+     <Compile Include="Assets\Scripts\TrackballCamera.cs" />
+     <Compile Include="Assets\Scripts\VRScripts\EventManager.cs" />
+     <Compile Include="Assets\Scripts\VRScripts\MoveByController.cs" />
+     <Compile Include="Assets\Scripts\VRScripts\MoveBySpringController.cs" />
+     <Compile Include="Assets\Scripts\VRScripts\MoveParent.cs" />
+     <Compile Include="Assets\Scripts\VRScripts\TurnOffHat.cs" />
+     <Compile Include="Assets\Scripts\VRScripts\controllerInfo.cs" />
+     <Compile Include="Assets\Scripts\VRScripts\copyPosition.cs" />
+     <Compile Include="Assets\Scripts\WhiskersScripts\ConnectionTentacle.cs" />
+     <Compile Include="Assets\Scripts\WhiskersScripts\Hydra.cs" />
+     <Compile Include="Assets\Scripts\WhiskersScripts\Tube.cs" />
+     <Compile Include="Assets\Scripts\WhiskersScripts\Whiskers.cs" />
+     <Compile Include="Assets\Scripts\WhiskersScripts\WhiskersBox.cs" />
+     <Compile Include="Assets\Scripts\maxCamera.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
@@ -93,37 +102,39 @@
      <Compile Include="Assets\SteamVR\Scripts\SteamVR_TestController.cs" />
      <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
      <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
+     <Compile Include="Assets\playOnHit.cs" />
+     <None Include="Assets\Shaders\Compute\Resources\WhiskersTransform.compute" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_BlitFlip.shader" />
-     <None Include="Assets\Shaders\BASIC1.shader" />
-     <None Include="Assets\Shaders\raytrace1.shader" />
+     <None Include="Assets\Shaders\vertfrag\test\BASIC1.shader" />
+     <None Include="Assets\Shaders\vertfrag\Raytrace\raytrace1.shader" />
+     <None Include="Assets\Shaders\Compute\Resources\WhiskersRoom.compute" />
+     <None Include="Assets\Shaders\vertfrag\Whiskers\Tube.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_HiddenArea.shader" />
-     <None Include="Assets\Shaders\jelloXY.compute" />
-     <None Include="Assets\Shaders\ribbon.compute" />
+     <None Include="Assets\Shaders\Compute\Resources\jelloXY.compute" />
+     <None Include="Assets\Shaders\Compute\Resources\ribbon.compute" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Overlay.shader" />
-     <None Include="Assets\Shaders\circularShader.compute" />
-     <None Include="Assets\Shaders\computeShaderTest.compute" />
-     <None Include="Assets\Shaders\Whiskers.shader" />
+     <None Include="Assets\Shaders\Compute\Resources\Whiskers.compute" />
+     <None Include="Assets\Shaders\Compute\Resources\circularShader.compute" />
+     <None Include="Assets\Shaders\Compute\Resources\computeShaderTest.compute" />
+     <None Include="Assets\Shaders\vertfrag\Whiskers\Whiskers.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Blit.shader" />
-     <None Include="Assets\Shaders\planeBufferShader.shader" />
-     <None Include="Assets\Shaders\AudioShader.shader" />
-     <None Include="Assets\Shaders\jello.compute" />
-     <None Include="Assets\Shaders\a_Polar1.shader" />
+     <None Include="Assets\Shaders\vertfrag\Gooey\planeBufferShader.shader" />
+     <None Include="Assets\Shaders\vertfrag\Whiskers\Base.shader" />
+     <None Include="Assets\Shaders\Compute\Resources\Tube.compute" />
+     <None Include="Assets\Shaders\vertfrag\Audio\AudioShader.shader" />
+     <None Include="Assets\Shaders\Compute\Resources\jello.compute" />
+     <None Include="Assets\Shaders\vertfrag\Audio\a_Polar1.shader" />
      <None Include="Assets\SteamVR\readme.txt" />
-     <None Include="Assets\Shaders\Select3D_BG.shader" />
-     <None Include="Assets\Shaders\mandala1.shader" />
-     <None Include="Assets\Shaders\ribbon.shader" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
+     <None Include="Assets\Shaders\vertfrag\Raytrace\Select3D_BG.shader" />
+     <None Include="Assets\Shaders\vertfrag\Audio\mandala1.shader" />
+     <None Include="Assets\Shaders\vertfrag\Gooey\ribbon.shader" />
+     <None Include="Assets\Shaders\vertfrag\Whiskers\Tips.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

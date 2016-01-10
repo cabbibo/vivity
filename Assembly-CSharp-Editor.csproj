@@ -53,31 +53,35 @@
      <Compile Include="Assets\SteamVR\Editor\SteamVR_Settings.cs" />
      <Compile Include="Assets\SteamVR\Editor\SteamVR_SkyboxEditor.cs" />
      <Compile Include="Assets\SteamVR\Editor\SteamVR_Update.cs" />
+     <None Include="Assets\Shaders\Compute\Resources\WhiskersTransform.compute" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_BlitFlip.shader" />
-     <None Include="Assets\Shaders\BASIC1.shader" />
-     <None Include="Assets\Shaders\raytrace1.shader" />
+     <None Include="Assets\Shaders\vertfrag\test\BASIC1.shader" />
+     <None Include="Assets\Shaders\vertfrag\Raytrace\raytrace1.shader" />
+     <None Include="Assets\Shaders\Compute\Resources\WhiskersRoom.compute" />
+     <None Include="Assets\Shaders\vertfrag\Whiskers\Tube.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_HiddenArea.shader" />
-     <None Include="Assets\Shaders\jelloXY.compute" />
-     <None Include="Assets\Shaders\ribbon.compute" />
+     <None Include="Assets\Shaders\Compute\Resources\jelloXY.compute" />
+     <None Include="Assets\Shaders\Compute\Resources\ribbon.compute" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Overlay.shader" />
-     <None Include="Assets\Shaders\circularShader.compute" />
-     <None Include="Assets\Shaders\computeShaderTest.compute" />
-     <None Include="Assets\Shaders\Whiskers.shader" />
+     <None Include="Assets\Shaders\Compute\Resources\Whiskers.compute" />
+     <None Include="Assets\Shaders\Compute\Resources\circularShader.compute" />
+     <None Include="Assets\Shaders\Compute\Resources\computeShaderTest.compute" />
+     <None Include="Assets\Shaders\vertfrag\Whiskers\Whiskers.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Blit.shader" />
-     <None Include="Assets\Shaders\planeBufferShader.shader" />
-     <None Include="Assets\Shaders\AudioShader.shader" />
-     <None Include="Assets\Shaders\jello.compute" />
-     <None Include="Assets\Shaders\a_Polar1.shader" />
+     <None Include="Assets\Shaders\vertfrag\Gooey\planeBufferShader.shader" />
+     <None Include="Assets\Shaders\vertfrag\Whiskers\Base.shader" />
+     <None Include="Assets\Shaders\Compute\Resources\Tube.compute" />
+     <None Include="Assets\Shaders\vertfrag\Audio\AudioShader.shader" />
+     <None Include="Assets\Shaders\Compute\Resources\jello.compute" />
+     <None Include="Assets\Shaders\vertfrag\Audio\a_Polar1.shader" />
      <None Include="Assets\SteamVR\readme.txt" />
-     <None Include="Assets\Shaders\Select3D_BG.shader" />
-     <None Include="Assets\Shaders\mandala1.shader" />
-     <None Include="Assets\Shaders\ribbon.shader" />
+     <None Include="Assets\Shaders\vertfrag\Raytrace\Select3D_BG.shader" />
+     <None Include="Assets\Shaders\vertfrag\Audio\mandala1.shader" />
+     <None Include="Assets\Shaders\vertfrag\Gooey\ribbon.shader" />
+     <None Include="Assets\Shaders\vertfrag\Whiskers\Tips.shader" />
  <Reference Include="Assembly-UnityScript">
  <HintPath>C:/Users/Cabbibo/Desktop/spaceWhale/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -93,9 +97,6 @@
  </Reference>
  <Reference Include="UnityEditor.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>

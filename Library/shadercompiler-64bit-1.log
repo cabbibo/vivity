@@ -1,3 +1,309 @@
 Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-9512
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-4576
 Cmd: getPlatforms
+Cmd: compileCompute
+  api=4 insize=1819 outsize=709 ok=1
+Cmd: compileCompute
+  api=4 insize=1819 outsize=709 ok=1
+Cmd: compileCompute
+  api=15 insize=1819 outsize=1369 ok=1
+Cmd: compileCompute
+  api=9 insize=1819 outsize=1253 ok=1
+Cmd: compileCompute
+  api=4 insize=1827 outsize=729 ok=1
+Cmd: compileCompute
+  api=4 insize=1827 outsize=729 ok=1
+Cmd: compileCompute
+  api=15 insize=1827 outsize=1389 ok=1
+Cmd: compileCompute
+  api=9 insize=1827 outsize=1273 ok=1
+Cmd: compileCompute
+  api=4 insize=1945 outsize=681 ok=1
+Cmd: compileCompute
+  api=4 insize=1945 outsize=681 ok=1
+Cmd: compileCompute
+  api=15 insize=1945 outsize=1369 ok=1
+Cmd: compileCompute
+  api=9 insize=1945 outsize=1253 ok=1
+Cmd: compileCompute
+  api=4 insize=2007 outsize=709 ok=1
+Cmd: compileCompute
+  api=4 insize=2007 outsize=709 ok=1
+Cmd: compileCompute
+  api=15 insize=2007 outsize=1389 ok=1
+Cmd: compileCompute
+  api=9 insize=2007 outsize=1273 ok=1
+Cmd: compileCompute
+  api=4 insize=2006 outsize=797 ok=1
+Cmd: compileCompute
+  api=4 insize=2006 outsize=797 ok=1
+Cmd: compileCompute
+  api=15 insize=2006 outsize=1497 ok=1
+Cmd: compileCompute
+  api=9 insize=2006 outsize=1381 ok=1
+Cmd: compileCompute
+  api=4 insize=2232 outsize=797 ok=1
+Cmd: compileCompute
+  api=4 insize=2232 outsize=797 ok=1
+Cmd: compileCompute
+  api=15 insize=2232 outsize=1497 ok=1
+Cmd: compileCompute
+  api=9 insize=2232 outsize=1381 ok=1
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(57): type mismatch
+  api=4 insize=3954 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(57): type mismatch
+  api=4 insize=3954 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(57): type mismatch
+  api=15 insize=3954 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(57): type mismatch
+  api=9 insize=3954 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(57): type mismatch
+  api=4 insize=3954 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(82): undeclared identifier 'pointsBuffer'
+  api=4 insize=3957 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(82): undeclared identifier 'pointsBuffer'
+  api=4 insize=3957 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(82): undeclared identifier 'pointsBuffer'
+  api=15 insize=3957 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(82): undeclared identifier 'pointsBuffer'
+  api=9 insize=3957 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(82): undeclared identifier 'pointsBuffer'
+  api=4 insize=3957 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(34): syntax error: unexpected token 'Vert'
+  api=4 insize=3959 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(34): syntax error: unexpected token 'Vert'
+  api=4 insize=3959 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(34): syntax error: unexpected token 'Vert'
+  api=15 insize=3959 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(34): syntax error: unexpected token 'Vert'
+  api=9 insize=3959 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(34): syntax error: unexpected token 'Vert'
+  api=4 insize=3959 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(87): undeclared identifier 'getPoint'
+  api=4 insize=3932 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(87): undeclared identifier 'getPoint'
+  api=4 insize=3932 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(87): undeclared identifier 'getPoint'
+  api=15 insize=3932 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(87): undeclared identifier 'getPoint'
+  api=9 insize=3932 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(87): undeclared identifier 'getPoint'
+  api=4 insize=3932 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(127): undeclared identifier 'cubicCurve'
+  api=4 insize=3934 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(127): undeclared identifier 'cubicCurve'
+  api=4 insize=3934 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(127): undeclared identifier 'cubicCurve'
+  api=15 insize=3934 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(127): undeclared identifier 'cubicCurve'
+  api=9 insize=3934 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(127): undeclared identifier 'cubicCurve'
+  api=4 insize=3934 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(204): undeclared identifier 'p0'
+  api=4 insize=3937 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(204): undeclared identifier 'p0'
+  api=4 insize=3937 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(204): undeclared identifier 'p0'
+  api=15 insize=3937 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(204): undeclared identifier 'p0'
+  api=9 insize=3937 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(204): undeclared identifier 'p0'
+  api=4 insize=3937 outsize=29 ok=0
+Cmd: compileCompute
+  api=4 insize=3847 outsize=797 ok=1
+Cmd: compileCompute
+  api=4 insize=3847 outsize=797 ok=1
+Cmd: compileCompute
+  api=15 insize=3847 outsize=1497 ok=1
+Cmd: compileCompute
+  api=9 insize=3847 outsize=1381 ok=1
+Cmd: compileCompute
+  api=4 insize=4215 outsize=797 ok=1
+Cmd: compileCompute
+  api=4 insize=4215 outsize=797 ok=1
+Cmd: compileCompute
+  api=15 insize=4215 outsize=1497 ok=1
+Cmd: compileCompute
+  api=9 insize=4215 outsize=1381 ok=1
+Cmd: compileCompute
+  api=4 insize=4693 outsize=4529 ok=1
+Cmd: compileCompute
+  api=4 insize=4693 outsize=4529 ok=1
+Cmd: compileCompute
+  api=15 insize=4693 outsize=7325 ok=1
+Cmd: compileCompute
+  api=9 insize=4693 outsize=7309 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at Tube.compute(209): floating point division by zero
+  error: 1 plat 4 at Tube.compute(210): floating point division by zero
+  api=4 insize=4738 outsize=985 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at Tube.compute(209): floating point division by zero
+  error: 1 plat 4 at Tube.compute(210): floating point division by zero
+  api=4 insize=4738 outsize=985 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at Tube.compute(209): floating point division by zero
+  error: 1 plat 4 at Tube.compute(210): floating point division by zero
+  api=15 insize=4738 outsize=1909 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at Tube.compute(209): floating point division by zero
+  error: 1 plat 4 at Tube.compute(210): floating point division by zero
+  api=9 insize=4738 outsize=1801 ok=1
+Cmd: compileCompute
+  api=4 insize=4782 outsize=5409 ok=1
+Cmd: compileCompute
+  api=4 insize=4782 outsize=5409 ok=1
+Cmd: compileCompute
+  api=15 insize=4782 outsize=7681 ok=1
+Cmd: compileCompute
+  api=9 insize=4782 outsize=7665 ok=1
+Cmd: compileCompute
+  api=4 insize=4782 outsize=4529 ok=1
+Cmd: compileCompute
+  api=4 insize=4782 outsize=4529 ok=1
+Cmd: compileCompute
+  api=15 insize=4782 outsize=7325 ok=1
+Cmd: compileCompute
+  api=9 insize=4782 outsize=7309 ok=1
+Cmd: compileCompute
+  api=4 insize=4782 outsize=4529 ok=1
+Cmd: compileCompute
+  api=4 insize=4782 outsize=4529 ok=1
+Cmd: compileCompute
+  api=15 insize=4782 outsize=7325 ok=1
+Cmd: compileCompute
+  api=9 insize=4782 outsize=7309 ok=1
+Cmd: preprocess
+  insize=3971 outsize=481 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3791 outsize=3573 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3791 outsize=575 kw= pd= ok=1
+Cmd: compileCompute
+  api=4 insize=4783 outsize=4529 ok=1
+Cmd: compileCompute
+  api=4 insize=4783 outsize=4529 ok=1
+Cmd: compileCompute
+  api=15 insize=4783 outsize=7329 ok=1
+Cmd: compileCompute
+  api=9 insize=4783 outsize=7317 ok=1
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(205): syntax error: unexpected token 'point'
+  error: 2 plat 4 at Tube.compute(207): 'mul': no matching 0 parameter intrinsic function; Possible intrinsic functions are: mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatK|halfK|doubleK|min10floatK|min16floatK|intK|uintK|min12intK|min16intK|min16uintK) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatLxK|halfLxK|doubleLxK|min10floatLxK|min16floatLxK|intLxK|uintLxK|min12intLxK|min16intLxK|min16uintLxK) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK)
+  error: 2 plat 4 at Tube.compute(207): syntax error: unexpected token 'point'
+  api=4 insize=4935 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(205): syntax error: unexpected token 'point'
+  error: 2 plat 4 at Tube.compute(207): 'mul': no matching 0 parameter intrinsic function; Possible intrinsic functions are: mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatK|halfK|doubleK|min10floatK|min16floatK|intK|uintK|min12intK|min16intK|min16uintK) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatLxK|halfLxK|doubleLxK|min10floatLxK|min16floatLxK|intLxK|uintLxK|min12intLxK|min16intLxK|min16uintLxK) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK)
+  error: 2 plat 4 at Tube.compute(207): syntax error: unexpected token 'point'
+  api=4 insize=4935 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(205): syntax error: unexpected token 'point'
+  error: 2 plat 4 at Tube.compute(207): 'mul': no matching 0 parameter intrinsic function; Possible intrinsic functions are: mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatK|halfK|doubleK|min10floatK|min16floatK|intK|uintK|min12intK|min16intK|min16uintK) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatLxK|halfLxK|doubleLxK|min10floatLxK|min16floatLxK|intLxK|uintLxK|min12intLxK|min16intLxK|min16uintLxK) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK)
+  error: 2 plat 4 at Tube.compute(207): syntax error: unexpected token 'point'
+  api=15 insize=4935 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(205): syntax error: unexpected token 'point'
+  error: 2 plat 4 at Tube.compute(207): 'mul': no matching 0 parameter intrinsic function; Possible intrinsic functions are: mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatK|halfK|doubleK|min10floatK|min16floatK|intK|uintK|min12intK|min16intK|min16uintK) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatLxK|halfLxK|doubleLxK|min10floatLxK|min16floatLxK|intLxK|uintLxK|min12intLxK|min16intLxK|min16uintLxK) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK)
+  error: 2 plat 4 at Tube.compute(207): syntax error: unexpected token 'point'
+  api=9 insize=4935 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(205): syntax error: unexpected token 'point'
+  error: 2 plat 4 at Tube.compute(207): 'mul': no matching 0 parameter intrinsic function; Possible intrinsic functions are: mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatK|halfK|doubleK|min10floatK|min16floatK|intK|uintK|min12intK|min16intK|min16uintK) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatLxK|halfLxK|doubleLxK|min10floatLxK|min16floatLxK|intLxK|uintLxK|min12intLxK|min16intLxK|min16uintLxK) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK)
+  error: 2 plat 4 at Tube.compute(207): syntax error: unexpected token 'point'
+  api=4 insize=4935 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(206): syntax error: unexpected token 'point'
+  error: 2 plat 4 at Tube.compute(208): 'mul': no matching 0 parameter intrinsic function; Possible intrinsic functions are: mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatK|halfK|doubleK|min10floatK|min16floatK|intK|uintK|min12intK|min16intK|min16uintK) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatLxK|halfLxK|doubleLxK|min10floatLxK|min16floatLxK|intLxK|uintLxK|min12intLxK|min16intLxK|min16uintLxK) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK)
+  error: 2 plat 4 at Tube.compute(208): syntax error: unexpected token 'point'
+  api=4 insize=4938 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(206): syntax error: unexpected token 'point'
+  error: 2 plat 4 at Tube.compute(208): 'mul': no matching 0 parameter intrinsic function; Possible intrinsic functions are: mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatK|halfK|doubleK|min10floatK|min16floatK|intK|uintK|min12intK|min16intK|min16uintK) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatLxK|halfLxK|doubleLxK|min10floatLxK|min16floatLxK|intLxK|uintLxK|min12intLxK|min16intLxK|min16uintLxK) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK)
+  error: 2 plat 4 at Tube.compute(208): syntax error: unexpected token 'point'
+  api=4 insize=4938 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(206): syntax error: unexpected token 'point'
+  error: 2 plat 4 at Tube.compute(208): 'mul': no matching 0 parameter intrinsic function; Possible intrinsic functions are: mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatK|halfK|doubleK|min10floatK|min16floatK|intK|uintK|min12intK|min16intK|min16uintK) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatLxK|halfLxK|doubleLxK|min10floatLxK|min16floatLxK|intLxK|uintLxK|min12intLxK|min16intLxK|min16uintLxK) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK)
+  error: 2 plat 4 at Tube.compute(208): syntax error: unexpected token 'point'
+  api=15 insize=4938 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(206): syntax error: unexpected token 'point'
+  error: 2 plat 4 at Tube.compute(208): 'mul': no matching 0 parameter intrinsic function; Possible intrinsic functions are: mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatK|halfK|doubleK|min10floatK|min16floatK|intK|uintK|min12intK|min16intK|min16uintK) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatLxK|halfLxK|doubleLxK|min10floatLxK|min16floatLxK|intLxK|uintLxK|min12intLxK|min16intLxK|min16uintLxK) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK)
+  error: 2 plat 4 at Tube.compute(208): syntax error: unexpected token 'point'
+  api=9 insize=4938 outsize=29 ok=0
+Cmd: compileCompute
+  error: 2 plat 4 at Tube.compute(206): syntax error: unexpected token 'point'
+  error: 2 plat 4 at Tube.compute(208): 'mul': no matching 0 parameter intrinsic function; Possible intrinsic functions are: mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatK|halfK|doubleK|min10floatK|min16floatK|intK|uintK|min12intK|min16intK|min16uintK) mul(float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint, floatLxK|halfLxK|doubleLxK|min10floatLxK|min16floatLxK|intLxK|uintLxK|min12intLxK|min16intLxK|min16uintLxK) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, float|half|double|min10float|min16float|int|uint|min12int|min16int|min16uint) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatM|halfM|doubleM|min10floatM|min16floatM|intM|uintM|min12intM|min16intM|min16uintM) mul(floatNxM|halfNxM|doubleNxM|min10floatNxM|min16floatNxM|intNxM|uintNxM|min12intNxM|min16intNxM|min16uintNxM, floatMxK|halfMxK|doubleMxK|min10floatMxK|min16floatMxK|intMxK|uintMxK|min12intMxK|min16intMxK|min16uintMxK)
+  error: 2 plat 4 at Tube.compute(208): syntax error: unexpected token 'point'
+  api=4 insize=4938 outsize=29 ok=0
+Cmd: compileCompute
+  api=4 insize=4928 outsize=4649 ok=1
+Cmd: compileCompute
+  api=4 insize=4928 outsize=4649 ok=1
+Cmd: compileCompute
+  api=15 insize=4928 outsize=7641 ok=1
+Cmd: compileCompute
+  api=9 insize=4928 outsize=7645 ok=1
+Cmd: compileCompute
+  api=4 insize=4944 outsize=4661 ok=1
+Cmd: compileCompute
+  api=4 insize=4944 outsize=4661 ok=1
+Cmd: compileCompute
+  api=15 insize=4944 outsize=7653 ok=1
+Cmd: compileCompute
+  api=9 insize=4944 outsize=7649 ok=1
+Cmd: compileCompute
+  api=4 insize=4943 outsize=4661 ok=1
+Cmd: compileCompute
+  api=4 insize=4943 outsize=4661 ok=1
+Cmd: compileCompute
+  api=15 insize=4943 outsize=7653 ok=1
+Cmd: compileCompute
+  api=9 insize=4943 outsize=7649 ok=1
+Cmd: compileCompute
+  api=4 insize=4945 outsize=4649 ok=1
+Cmd: compileCompute
+  api=4 insize=4945 outsize=4649 ok=1
+Cmd: compileCompute
+  api=15 insize=4945 outsize=7641 ok=1
+Cmd: compileCompute
+  api=9 insize=4945 outsize=7645 ok=1
+Cmd: compileCompute
+  api=4 insize=4945 outsize=4649 ok=1
+Cmd: compileCompute
+  api=4 insize=4945 outsize=4649 ok=1
+Cmd: compileCompute
+  api=15 insize=4945 outsize=7641 ok=1
+Cmd: compileCompute
+  api=9 insize=4945 outsize=7645 ok=1
