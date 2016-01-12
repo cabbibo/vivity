@@ -45,13 +45,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AddWhiskerBox.cs" />
      <Compile Include="Assets\OSPNative\scenes\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\OSPNative\scripts\ONSPAudioSource.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\audioSourceTexture.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\micInput.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\micInput2.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\setAudioSourceTexture.cs" />
+     <Compile Include="Assets\Scripts\CameraControls\MouseCameraControl.cs" />
+     <Compile Include="Assets\Scripts\CameraControls\TrackballCamera.cs" />
+     <Compile Include="Assets\Scripts\CameraControls\maxCamera.cs" />
      <Compile Include="Assets\Scripts\GooScripts\CreatePlane.cs" />
      <Compile Include="Assets\Scripts\GooScripts\RibbonXY.cs" />
      <Compile Include="Assets\Scripts\GooScripts\Ribbons.cs" />
@@ -59,8 +61,6 @@
      <Compile Include="Assets\Scripts\InterfaceScripts\Select3D.cs" />
      <Compile Include="Assets\Scripts\InterfaceScripts\SetColorFromValue.cs" />
      <Compile Include="Assets\Scripts\InterfaceScripts\Slider.cs" />
-     <Compile Include="Assets\Scripts\MouseCameraControl.cs" />
-     <Compile Include="Assets\Scripts\TrackballCamera.cs" />
      <Compile Include="Assets\Scripts\VRScripts\EventManager.cs" />
      <Compile Include="Assets\Scripts\VRScripts\MoveByController.cs" />
      <Compile Include="Assets\Scripts\VRScripts\MoveBySpringController.cs" />
@@ -68,12 +68,17 @@
      <Compile Include="Assets\Scripts\VRScripts\TurnOffHat.cs" />
      <Compile Include="Assets\Scripts\VRScripts\controllerInfo.cs" />
      <Compile Include="Assets\Scripts\VRScripts\copyPosition.cs" />
+     <Compile Include="Assets\Scripts\WhiskersScripts\AddRays.cs" />
+     <Compile Include="Assets\Scripts\WhiskersScripts\AddWhiskerBox.cs" />
      <Compile Include="Assets\Scripts\WhiskersScripts\ConnectionTentacle.cs" />
      <Compile Include="Assets\Scripts\WhiskersScripts\Hydra.cs" />
+     <Compile Include="Assets\Scripts\WhiskersScripts\LookForFood.cs" />
+     <Compile Include="Assets\Scripts\WhiskersScripts\MakeFood.cs" />
+     <Compile Include="Assets\Scripts\WhiskersScripts\PlayTouch.cs" />
      <Compile Include="Assets\Scripts\WhiskersScripts\Tube.cs" />
      <Compile Include="Assets\Scripts\WhiskersScripts\Whiskers.cs" />
      <Compile Include="Assets\Scripts\WhiskersScripts\WhiskersBox.cs" />
-     <Compile Include="Assets\Scripts\maxCamera.cs" />
+     <Compile Include="Assets\Scripts\WhiskersScripts\playOnHit.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
      <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
@@ -102,7 +107,6 @@
      <Compile Include="Assets\SteamVR\Scripts\SteamVR_TestController.cs" />
      <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
      <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
-     <Compile Include="Assets\playOnHit.cs" />
      <None Include="Assets\Shaders\Compute\Resources\WhiskersTransform.compute" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_BlitFlip.shader" />
@@ -130,11 +134,17 @@
      <None Include="Assets\Shaders\vertfrag\Audio\mandala1.shader" />
      <None Include="Assets\Shaders\vertfrag\Gooey\ribbon.shader" />
      <None Include="Assets\Shaders\vertfrag\Whiskers\Tips.shader" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

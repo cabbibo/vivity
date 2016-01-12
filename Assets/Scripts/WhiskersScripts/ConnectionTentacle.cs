@@ -27,6 +27,7 @@ public class ConnectionTentacle : MonoBehaviour {
 
     Rigidbody rb;
     SpringJoint sj;
+    PlayTouch pt;
 
     for( int i  = 0; i <numPoints; i++ ){
 
@@ -38,13 +39,21 @@ public class ConnectionTentacle : MonoBehaviour {
       capsule.transform.rotation = Quaternion.FromToRotation(Vector3.up, dif);
       capsule.GetComponent<Renderer>().enabled = false;
 
+
+      pt =  capsule.AddComponent<PlayTouch>();
+      pt.pitch = 0.5f + 2.0f * (float)i / (float)numPoints;
+      pt.time = Random.Range( 0 , 1 );
+
+      pt.clip = Resources.Load("Audio/weird glitchy noise") as AudioClip;
+
+
       rb = capsule.AddComponent<Rigidbody>();
-      rb.drag = 3;
-      rb.angularDrag = 1;
+      rb.drag = 1;
+      rb.angularDrag = .5f;
     
       sj = capsule.AddComponent<SpringJoint>();
       sj.spring = 100;
-      sj.damper = 3;
+      sj.damper = 1;
       sj.anchor = new Vector3( 0 , -.5f , 0);
 
       if( i == 0){
@@ -95,6 +104,9 @@ public class ConnectionTentacle : MonoBehaviour {
     tube.computeShader = (ComputeShader)Resources.Load("Tube");
     tube.handL = GameObject.Find("handL");
     tube.handR = GameObject.Find("handR");
+    tube.pointSize = pointSize;
+    tube.tipSize = tipSize;
+    tube.baseSize = baseSize;
     
 
   }

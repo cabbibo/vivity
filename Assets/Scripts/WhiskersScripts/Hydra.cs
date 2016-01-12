@@ -28,6 +28,9 @@ public class Hydra : MonoBehaviour {
   private Vector3[] directions;
 
 
+  private PlayTouch pt;
+
+
 	void OnEnable () {
 
     Tips = new List<GameObject>();
@@ -51,9 +54,16 @@ public class Hydra : MonoBehaviour {
     Center.transform.position = Vector3.up * stalkLength;
     Center.AddComponent<AddWhiskerBox>();
     rb = Center.AddComponent<Rigidbody>();
-    rb.drag = 10;
-    rb.angularDrag = 10;
+    rb.drag = .1f;
+    rb.angularDrag = 0.5f;
     //rb.isKinematic = false;
+
+    pt =  Center.AddComponent<PlayTouch>();
+    pt.pitch = 0.5f;
+    //pt.time = 1;
+
+    pt.clip = Resources.Load("Audio/bonce chord") as AudioClip;
+
 
     
     //Base.transform.position = ;
@@ -67,6 +77,8 @@ public class Hydra : MonoBehaviour {
     ct.tipSize   = centerScale/2.0f;
 
 
+    LookForFood lff;
+
     for( int i = 0; i < directions.Length; i++ ){
 
       GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -74,8 +86,8 @@ public class Hydra : MonoBehaviour {
       cube.transform.position = directions[i] * armLength + Center.transform.position; 
       cube.AddComponent<AddWhiskerBox>();
       rb = cube.AddComponent<Rigidbody>();
-      rb.drag = 10;
-      rb.angularDrag = 10;
+      rb.drag = 1;
+      rb.angularDrag = 0.5f;
 
       ct = cube.AddComponent<ConnectionTentacle>();
       ct.Tip = cube;
@@ -85,6 +97,17 @@ public class Hydra : MonoBehaviour {
       ct.baseSize  = centerScale /2.0f;
       ct.tipSize   = tipScale/2.0f;
 
+      lff = cube.AddComponent<LookForFood>();
+      lff.sensingRadius = 1.0f;
+
+      pt =  cube.AddComponent<PlayTouch>();
+      pt.pitch = 1.0f + (float)i/directions.Length;
+      pt.time = (float)i/directions.Length;
+
+      pt.clip = Resources.Load("Audio/bonce chord") as AudioClip;
+
+      Tips.Add( cube );
+
 
 
     }
@@ -93,6 +116,16 @@ public class Hydra : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+    for( int i = 0; i < directions.Length; i++){
+
+      Vector3 targetPos = Center.transform.rotation * (directions[i] * armLength) + Center.transform.position;
+      targetPos -= Tips[i].transform.position;
+      targetPos.Normalize();
+      targetPos *= .1f;
+      Rigidbody rb = Tips[i].GetComponent<Rigidbody>();
+      rb.AddForce( targetPos );
+    }
 	
 	}
 }

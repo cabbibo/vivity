@@ -15,9 +15,9 @@ public class Tube : MonoBehaviour
     public const int threadY = 4;
     public const int threadZ = 4;
 
-    public const int strideX = 8;
-    public const int strideY = 8;
-    public const int strideZ = 8;
+    public const int strideX = 4;
+    public const int strideY = 4;
+    public const int strideZ = 4;
 
     public int ribbonWidth = 64;
     private int ribbonLength;
@@ -28,6 +28,10 @@ public class Tube : MonoBehaviour
     public GameObject handL;
     public GameObject handR;
     public GameObject audioObj;
+
+    public float pointSize;
+    public float tipSize;
+    public float baseSize;
 
 
     private float[] pointValues;
@@ -75,10 +79,7 @@ public class Tube : MonoBehaviour
 
         pointsLength = Points.Length;
         pointValues = new float[16 * pointsLength];
-        print( "YO");
-        print( pointsLength);
-        print( ribbonWidth );
-
+      
         ribbonLength = totalRibbonLength;
 
 
@@ -140,9 +141,10 @@ public class Tube : MonoBehaviour
             float u = uvX * 2.0f * Mathf.PI;
             float v = uvY * 2.0f * Mathf.PI;
 
-            float xV = Mathf.Sin(u);
-            float zV = v;
-            float yV = Mathf.Cos(u);
+            float xV = Random.Range(-.1f, .1f);
+            float zV = Random.Range(-.1f, .1f);
+            float yV = Random.Range(-.1f, .1f);
+            yV += 1.25f;
 
             // /xV  = uvX / 10;
             // /yV  = 1;
@@ -224,6 +226,12 @@ public class Tube : MonoBehaviour
 
       computeShader.SetFloat( "_DeltaTime"    , Time.deltaTime );
       computeShader.SetFloat( "_Time"         , Time.time      );
+
+      computeShader.SetFloat( "_PointSize"    , pointSize    );
+      computeShader.SetFloat( "_TipSize"      , tipSize      );
+      computeShader.SetFloat( "_BaseSize"     , baseSize     );
+
+
       computeShader.SetInt( "_RibbonWidth"   , ribbonWidth   );
       computeShader.SetInt( "_RibbonLength"   , ribbonLength  );
       computeShader.SetInt( "_PointsLength"  , pointsLength  );

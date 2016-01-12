@@ -116,7 +116,7 @@
                 float3 worldPos = v.pos;
 
                 o.pos = mul (UNITY_MATRIX_VP, float4(worldPos,1.0f));
-                o.debug = (nor * .5 + .5) * float3( v.debug.x , v.debug.x , v.debug.x );//float3(float(fID)/32768., v.uv.x , v.uv.y);
+                o.debug = (nor * .5 + .5);// * float3( v.debug.x , v.debug.x , v.debug.x );//float3(float(fID)/32768., v.uv.x , v.uv.y);
                 return o;
             }
  

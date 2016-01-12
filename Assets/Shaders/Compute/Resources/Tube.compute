@@ -8,6 +8,9 @@ float _Delta;
 float3 _HandL;
 float3 _HandR;
 float  _Drawing;
+float  _BaseSize;
+float  _TipSize;
+float  _PointSize;
 
 float3 _Interface;
 
@@ -23,9 +26,9 @@ uint _StrideSize;
 #define threadY 4
 #define threadZ 4
 
-#define strideX 8
-#define strideY 8
-#define strideZ 8
+#define strideX 4
+#define strideY 4
+#define strideZ 4
 
 #define gridX (threadX * strideX)
 #define gridY (threadY * strideY)
@@ -229,23 +232,51 @@ void CSMain (uint3 id : SV_DispatchThreadID) {
 
   //  if(  left > 0.  ){ curveY *= -1.;  curveX *= -1.; }
 
-   
-
-
   }
 
   float angle = colN * 2. * 3.14159;
-  float radius = .03;//(abs(sin( uTime * 1.5  + aUV.x * 20.)) + 1.) *.3 * fall + .3 * pow( fall , .3);
+  float radius = _PointSize * 0.5;//(abs(sin( uTime * 1.5  + aUV.x * 20.)) + 1.) *.3 * fall + .3 * pow( fall , .3);
+
+  if( rowN < .2 ){
+    radius = lerp( _BaseSize , radius , pow( (rowN / .2) , .4 ) );
+  }
+
+  if( rowN > .8 ){
+    radius = lerp(  radius , _TipSize , pow( ((rowN - .8) / .2) , 2.0 ) );
+  }
 
   fPos = pos + radius * curveX * sin( angle ) + radius * curveY * cos( angle );
-
 
 
   
   Vert vert = vertBuffer[pID];
   Pos og = ogBuffer[pID];
   vert.debug.x = pointDown / float(_PointsLength);
-  vert.pos = fPos;
+  // vert.pos = fPos;
+  float3 force = float3( 0. , 0. , 0. );
+
+  force += 40.1 * springForce( vert.pos , fPos , .00000001 );
+
+  float3 handR = _HandR - vert.pos;
+  float lR = length( handR );
+  handR = normalize( handR );
+  if( lR < .1){
+    force -=.05 *  handR * (.03) / lR; 
+  }
+
+  float3 handL = _HandL - vert.pos;
+  float lL = length( handL );
+  handL = normalize( handL );
+  if( lL < .1){
+    force -= .05 * handL * (.03) / lL; 
+  }
+
+
+  vert.vel += force * .03;
+  if( length( vert.vel) > .005 ){ vert.vel = normalize( vert.vel ) * .005;}
+  vert.pos += vert.vel;
+
+  vert.vel *= .9;
 
   vertBuffer[pID] = vert;
 
