@@ -4,7 +4,7 @@ using System.Collections;
 public class audioSourceTexture : MonoBehaviour {
 
   public Texture2D AudioTexture;
-  public AudioSource src;
+  public AudioListener src;
 
   public Color[] colors = new Color[256];
 
@@ -12,7 +12,7 @@ public class audioSourceTexture : MonoBehaviour {
   float[] spectrum = new float[2048];
 
 
- // private AudioListener audio;
+   private AudioListener audio;
   // Use this for initialization
   void Start () {
 
@@ -23,7 +23,7 @@ public class audioSourceTexture : MonoBehaviour {
 
     Color[] cols = AudioTexture.GetPixels( 0 );
     
-    src = GetComponent<AudioSource>();
+    src = GetComponent<AudioListener>();
   
   }
   
@@ -31,7 +31,7 @@ public class audioSourceTexture : MonoBehaviour {
   void Update () {
 
 
-    src.GetSpectrumData(spectrum, 0, FFTWindow.Triangle);
+    AudioListener.GetSpectrumData(spectrum, 0, FFTWindow.Triangle);
     
     Color[] cols = AudioTexture.GetPixels( 0 );
     Color c = new Color(0,0,0,0);
@@ -40,10 +40,10 @@ public class audioSourceTexture : MonoBehaviour {
      // c.r = 
       //print( cols[i] );
 
-      c.r = spectrum[ i * 4 + 0 ];
-      c.g = spectrum[ i * 4 + 1 ];
-      c.b = spectrum[ i * 4 + 2 ];
-      c.a = spectrum[ i * 4 + 3 ];
+      c.r = spectrum[ i * 4 + 0 ];//* .5f + cols[i].r * .5f;
+      c.g = spectrum[ i * 4 + 1 ];//* .5f + cols[i].g * .5f;
+      c.b = spectrum[ i * 4 + 2 ];//* .5f + cols[i].b * .5f;
+      c.a = spectrum[ i * 4 + 3 ];//* .5f + cols[i].a * .5f;
 
       cols[i] = c;//Color.Lerp( cols[i] , c , .9f );
 

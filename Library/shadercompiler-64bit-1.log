@@ -1,3 +1,430 @@
 Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-3840
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-6628
 Cmd: getPlatforms
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3768 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3768 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3768 outsize=9577 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3768 outsize=9609 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3768 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3768 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3768 outsize=9577 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3768 outsize=9609 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3766 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3766 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3766 outsize=9569 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3766 outsize=9601 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3767 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3767 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3767 outsize=9573 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3767 outsize=9605 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3767 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3767 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3767 outsize=9569 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3767 outsize=9601 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3772 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3772 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3772 outsize=9341 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3772 outsize=9361 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3771 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3771 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3771 outsize=9341 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3771 outsize=9361 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3770 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3770 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3770 outsize=9341 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3770 outsize=9361 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3770 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3770 outsize=5373 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3770 outsize=9341 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3770 outsize=9361 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3768 outsize=5453 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3768 outsize=5453 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3768 outsize=9473 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3768 outsize=9497 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3774 outsize=5481 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3774 outsize=5481 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3774 outsize=9505 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3774 outsize=9533 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3775 outsize=5493 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3775 outsize=5493 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3775 outsize=9533 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3775 outsize=9557 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3774 outsize=5493 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3774 outsize=5493 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3774 outsize=9529 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3774 outsize=9557 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3774 outsize=5493 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3774 outsize=5493 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3774 outsize=9529 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3774 outsize=9557 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3776 outsize=5493 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3776 outsize=5493 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3776 outsize=9529 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3776 outsize=9557 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3777 outsize=5493 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3777 outsize=5493 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3777 outsize=9529 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3777 outsize=9557 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3779 outsize=5493 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3779 outsize=5493 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3779 outsize=9541 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3779 outsize=9565 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3795 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3795 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3795 outsize=9861 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3795 outsize=9893 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3796 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3796 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3796 outsize=9861 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3796 outsize=9893 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3797 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3797 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3797 outsize=9865 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3797 outsize=9897 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3798 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3798 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3798 outsize=9861 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3798 outsize=9893 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3798 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3798 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3798 outsize=9861 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3798 outsize=9893 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3797 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3797 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3797 outsize=9865 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3797 outsize=9897 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3797 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3797 outsize=5641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3797 outsize=9865 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3797 outsize=9897 ok=1
+Cmd: preprocess
+  insize=4498 outsize=486 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=4313 outsize=2931 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=4313 outsize=1030 kw= pd= ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3810 outsize=4641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=3810 outsize=4641 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=3810 outsize=8257 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(95): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=3810 outsize=8269 ok=1
+Cmd: preprocess
+  insize=3527 outsize=487 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3341 outsize=4174 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3341 outsize=1014 kw= pd= ok=1
+Cmd: preprocess
+  insize=3531 outsize=486 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (115): syntax error: unexpected token ','\nCompiling Vertex program
+  api=4 type=0 insize=3345 outsize=0 kw= pd= ok=0
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=4353 outsize=6741 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=4353 outsize=6741 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=4353 outsize=11053 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=4353 outsize=11077 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=4358 outsize=6761 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=4358 outsize=6761 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=4358 outsize=11101 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=4358 outsize=11121 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=4409 outsize=6929 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=4409 outsize=6929 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=4409 outsize=11273 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=4409 outsize=11297 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=4409 outsize=6929 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=4409 outsize=6929 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=4409 outsize=11273 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=4409 outsize=11293 ok=1
+Cmd: preprocess
+  insize=3530 outsize=487 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3344 outsize=4174 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3344 outsize=957 kw= pd= ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=4417 outsize=6985 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=4417 outsize=6985 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=4417 outsize=11341 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=4417 outsize=11361 ok=1
+Cmd: preprocess
+  insize=3495 outsize=487 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3309 outsize=4174 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3309 outsize=705 kw= pd= ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=4417 outsize=6985 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=4 insize=4417 outsize=6985 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=15 insize=4417 outsize=11341 ok=1
+Cmd: compileCompute
+  error: 1 plat 4 at WhiskersSea.compute(110): integer modulus may be much slower, try using uints if possible.
+  api=9 insize=4417 outsize=11361 ok=1
+Cmd: preprocess
+  insize=3530 outsize=486 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3344 outsize=4174 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=3344 outsize=957 kw= pd= ok=1
+Cmd: preprocess
+  insize=4499 outsize=486 ok=1
+Cmd: preprocess
+  insize=996 outsize=1278 ok=1
+Cmd: preprocess
+  insize=5430 outsize=571 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=5160 outsize=1818 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=5160 outsize=15176 kw= pd= ok=1
+Cmd: preprocess
+  insize=5407 outsize=571 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=5137 outsize=1818 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=5137 outsize=14583 kw= pd= ok=1
+Cmd: compileSnippet
+  api=1 type=0 insize=5137 outsize=373 kw= pd= ok=1
+Cmd: compileSnippet
+  api=1 type=1 insize=5137 outsize=4440 kw= pd= ok=1

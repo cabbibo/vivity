@@ -19,6 +19,7 @@ public class PlayTouch : MonoBehaviour {
     audio.pitch = pitch;
     audio.spatialize = true;
 	  audio.time = time;
+    audio.volume = 3;
 	}
 	
 	// Update is called once per frame

@@ -46,44 +46,47 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Plugins\openvr_api.cs" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Whiskers\seaWhiskers.shader" />
      <None Include="Assets\Shaders\Compute\Resources\WhiskersTransform.compute" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Raytrace\RaytraceFloor.shader" />
+     <None Include="Assets\Shaders\Compute\Resources\WhiskersFloor.compute" />
      <None Include="Assets\SteamVR\Resources\SteamVR_BlitFlip.shader" />
-     <None Include="Assets\Shaders\vertfrag\test\BASIC1.shader" />
-     <None Include="Assets\Shaders\vertfrag\Raytrace\raytrace1.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\test\BASIC1.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Raytrace\raytrace1.shader" />
      <None Include="Assets\Shaders\Compute\Resources\WhiskersRoom.compute" />
-     <None Include="Assets\Shaders\vertfrag\Whiskers\Tube.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Whiskers\Floor.shader" />
+     <None Include="Assets\Shaders\Compute\Resources\WhiskersSea.compute" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Whiskers\Tube.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_HiddenArea.shader" />
      <None Include="Assets\Shaders\Compute\Resources\jelloXY.compute" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Whiskers\seaTips.shader" />
      <None Include="Assets\Shaders\Compute\Resources\ribbon.compute" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Overlay.shader" />
      <None Include="Assets\Shaders\Compute\Resources\Whiskers.compute" />
      <None Include="Assets\Shaders\Compute\Resources\circularShader.compute" />
      <None Include="Assets\Shaders\Compute\Resources\computeShaderTest.compute" />
-     <None Include="Assets\Shaders\vertfrag\Whiskers\Whiskers.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Whiskers\Whiskers.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Raytrace\RaytraceFood.shader" />
      <None Include="Assets\SteamVR\Resources\SteamVR_Blit.shader" />
-     <None Include="Assets\Shaders\vertfrag\Gooey\planeBufferShader.shader" />
-     <None Include="Assets\Shaders\vertfrag\Whiskers\Base.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Gooey\planeBufferShader.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Whiskers\Base.shader" />
      <None Include="Assets\Shaders\Compute\Resources\Tube.compute" />
-     <None Include="Assets\Shaders\vertfrag\Audio\AudioShader.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Audio\AudioShader.shader" />
      <None Include="Assets\Shaders\Compute\Resources\jello.compute" />
-     <None Include="Assets\Shaders\vertfrag\Audio\a_Polar1.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Audio\a_Polar1.shader" />
      <None Include="Assets\SteamVR\readme.txt" />
-     <None Include="Assets\Shaders\vertfrag\Raytrace\Select3D_BG.shader" />
-     <None Include="Assets\Shaders\vertfrag\Audio\mandala1.shader" />
-     <None Include="Assets\Shaders\vertfrag\Gooey\ribbon.shader" />
-     <None Include="Assets\Shaders\vertfrag\Whiskers\Tips.shader" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
+     <None Include="Assets\Shaders\vertfrag\Resources\Whiskers\seaFloor.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Raytrace\Select3D_BG.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Whiskers\Background.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Audio\mandala1.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Gooey\ribbon.shader" />
+     <None Include="Assets\Shaders\vertfrag\Resources\Whiskers\Tips.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

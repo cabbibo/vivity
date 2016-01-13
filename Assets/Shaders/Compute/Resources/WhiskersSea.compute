@@ -1,0 +1,199 @@
+﻿#pragma kernel CSMain
+ 
+
+
+ 
+float _Time;
+float _Delta;
+float3 _HandL;
+float3 _HandR;
+float  _Drawing;
+
+float3 _Interface;
+
+float radius = .4;
+uint _ThreadSize;
+uint _StrideSize;
+
+#define threadX 8
+#define threadY 8
+#define threadZ 8
+#define strideX 8   
+#define strideY 8
+#define strideZ 8
+
+#define gridX (threadX * strideX)
+#define gridY (threadY * strideY)
+#define gridZ (threadZ * strideZ)
+
+
+
+
+struct Vert {
+
+    float3 pos;
+    float3 vel;
+    float3 nor;
+    float2 uv;
+    float  ribbonID;
+    float  life; 
+    float3 debug;
+
+};
+
+struct Pos {
+
+    float3 pos;
+
+
+};
+
+float3 springForce( float3 p1 , float3 p2 , float d ){
+
+  float3 dir = p1 - p2;
+  float l = length( dir );
+  dir = normalize( dir );
+
+  float dif = l - d;
+
+  return dif * dif * float(sign(dif)) * -dir;
+
+}
+
+
+float sdBox( float3 p)
+{
+  float3 b = float3( 1. , 1. , 1. );
+  float3 d = abs(p) - b;
+  return min(max(d.x,max(d.y,d.z)),0.0) +
+         length(max(d,0.0));
+}
+
+float3 calcNormal( in float3 pos){
+  float3 eps = float3(0.001 , 0.0,0.0);
+  return normalize( float3(
+           sdBox(pos+eps.xyy) - sdBox(pos-eps.xyy),
+           sdBox(pos+eps.yxy) - sdBox(pos-eps.yxy),
+           sdBox(pos+eps.yyx) - sdBox(pos-eps.yyx) ) );
+}
+
+float hash( float n ) { return frac(sin(n)*753.5453123); }
+float noise( in float3 x )
+{
+    float3 p = floor(x);
+    float3 f = frac(x);
+    f = f*f*(3.0-2.0*f);
+  
+    float n = p.x + p.y*157.0 + 113.0*p.z;
+    return lerp(lerp(lerp( hash(n+  0.0), hash(n+  1.0),f.x),
+                   lerp( hash(n+157.0), hash(n+158.0),f.x),f.y),
+               lerp(lerp( hash(n+113.0), hash(n+114.0),f.x),
+                   lerp( hash(n+270.0), hash(n+271.0),f.x),f.y),f.z);
+}
+
+
+RWStructuredBuffer<Vert> vertBuffer;
+RWStructuredBuffer<Pos> ogBuffer;
+Texture2D<float4> _Audio;
+RWStructuredBuffer<float4x4> transBuffer;
+
+[numthreads(threadX,threadY,threadZ)]
+void CSMain (uint3 id : SV_DispatchThreadID) {
+  
+  int total = gridX * gridY * gridZ;
+  
+  int pID = id.x + id.y * gridX + id.z * gridX * gridY;
+  
+  Vert vert = vertBuffer[pID];
+  Pos og = ogBuffer[pID];
+  
+  int stalkVal = pID % 8;
+
+  float3 force = float3( 0. , 0., 0.);
+
+  if( stalkVal == 0 ){
+
+    float3 newPos = mul( transBuffer[0] , float4( og.pos , 1.) ).xyz;
+
+
+    //vert.pos =  mul( transBuffer[0] , float4( og.pos , 1.) ).xyz;
+
+    force += 1.1 * springForce( vert.pos , newPos , .00000001 );
+   //float4 audio;
+   //  for( int i = 0; i < 40; i++ ){
+
+   //    audio = _Audio[float2(float(i) / 2.0,0)];
+   //   // float3 aPos = float3( sin( i ) * 5, -.3 , sin( i * 3 ) * 5 );
+   //   float angle = (float( i ) / 40 ) * 2 * 3.14159;
+   //    float3 aPos = float3( sin( angle ) * 1.5, -.6 , cos( angle ) * 1.5);
+   //    float3 dif = vert.pos - aPos;
+   //    if( length(dif) < 100.5 * length(audio)){ 
+   //      audio = _Audio[float2((1.0 - length(dif))* 3.0 + float(i)/2.0  ,0)];
+   //      force += length( audio ) * .05 * (2. - length(dif)) * (normalize( dif ) - float3( 0. , 1. , 0. ));
+   //    }
+
+   //  }
+    vert.vel *= .98;
+
+  }else{
+
+    Vert down = vertBuffer[pID-1];
+
+
+    float3 sdPos = mul( transBuffer[1] , float4( vert.pos , 1.)).xyz;
+
+    float dist = sdBox( sdPos );
+
+    //vert.debug.x = dist;
+
+
+    //float3 upForce = calcNormal( sdPos );
+    float3 upForce =  mul( transBuffer[0] , float4( vert.debug, 0.) ).xyz; //vert.debug;
+    force += upForce * .01;//  + _Interface.z * .003;
+
+
+    force += 40.0 * springForce( vert.pos , down.pos , .0000001 );
+
+
+    if( stalkVal != 7 ){
+      Vert up = vertBuffer[pID+1];
+      force += 40.0 * springForce( vert.pos , up.pos , .0000001 );
+    }else{
+
+      force += .03 * float3( noise( vert.pos * 2.0  + float3( _Time , 0 , 0)) - .5 , 0 , noise( vert.pos + float3( 0 , 0 , _Time) )-.5);
+      
+    }
+
+
+  }
+
+    float3 handR = _HandR - vert.pos;
+    float lR = length( handR );
+    handR = normalize( handR );
+    if( lR < .1 + _Interface.y * 1.1){
+      force -=.15 *  handR * (.002+ _Interface.y * .002) / lR; 
+    }
+
+    float3 handL = _HandL - vert.pos;
+    float lL = length( handL );
+    handL = normalize( handL );
+    if( lL < .1 + _Interface.y * 1.1){
+      force -= .15 * handL * (.002+ _Interface.y * .002) / lL; 
+    }
+
+
+    vert.vel += force * .03;
+    if( length( vert.vel) > .03 ){ vert.vel = normalize( vert.vel ) * .03;}
+    vert.pos += vert.vel;
+
+    //vert.vel *= .95 + _Interface.x * .05;
+    vert.vel *= .99;
+
+
+  //vert.pos = og.pos;
+
+
+
+  vertBuffer[pID] = vert;
+
+}

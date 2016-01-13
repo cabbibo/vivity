@@ -44,11 +44,19 @@ public class Hydra : MonoBehaviour {
     };
     Rigidbody rb;
 
-    Base = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+    Base = GameObject.CreatePrimitive(PrimitiveType.Cube);
     Base.transform.localScale = Base.transform.localScale *  baseScale;
+    Base.GetComponent<Renderer>().enabled = false;
+    Base.transform.position = Base.transform.position - new Vector3( 0 ,0.25f,0);
     rb = Base.AddComponent<Rigidbody>();
+    
     rb.isKinematic = true;
 
+
+    MakeBase mb = Base.AddComponent<MakeBase>();
+    mb.CameraRig = GameObject.Find("[CameraRig]");
+    
+    
     Center = GameObject.CreatePrimitive(PrimitiveType.Cube);
     Center.transform.localScale = Center.transform.localScale * centerScale;
     Center.transform.position = Vector3.up * stalkLength;
@@ -59,10 +67,10 @@ public class Hydra : MonoBehaviour {
     //rb.isKinematic = false;
 
     pt =  Center.AddComponent<PlayTouch>();
-    pt.pitch = 0.5f;
+    pt.pitch = 1;
     //pt.time = 1;
 
-    pt.clip = Resources.Load("Audio/bonce chord") as AudioClip;
+    pt.clip = Resources.Load("Audio/hydra/BaseHit") as AudioClip;
 
 
     
@@ -101,10 +109,12 @@ public class Hydra : MonoBehaviour {
       lff.sensingRadius = 1.0f;
 
       pt =  cube.AddComponent<PlayTouch>();
-      pt.pitch = 1.0f + (float)i/directions.Length;
-      pt.time = (float)i/directions.Length;
+      pt.pitch = 1.0f;
+      //pt.time = (float)i/directions.Length;
+      string name = "Audio/hydra/TipHit" + (i+1);
+      print( name );
 
-      pt.clip = Resources.Load("Audio/bonce chord") as AudioClip;
+      pt.clip = Resources.Load(name) as AudioClip;
 
       Tips.Add( cube );
 

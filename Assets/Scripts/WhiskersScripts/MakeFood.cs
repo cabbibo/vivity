@@ -20,14 +20,13 @@ public class MakeFood : MonoBehaviour {
     go.transform.position = go.transform.position + ( go.transform.rotation * (Vector3.forward * .1f) );
     go.AddComponent<Rigidbody>();
 
+    go.AddComponent<Food>();
+    Shader s = Shader.Find("Custom/RaytraceFood");
+    Material m = new Material( s );
+  
+    go.GetComponent<Renderer>().material = m;
 
-    audio = go.AddComponent<AudioSource>();
-    audio.loop = true;
-    audio.spatialize = true;
-
-    audio.clip = Resources.Load("Audio/feedback noise") as AudioClip;
-    audio.volume = 0.1f;
-    audio.Play();
+   
 
   }
 

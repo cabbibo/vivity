@@ -28,6 +28,11 @@ public class LookForFood : MonoBehaviour {
 
       Vector3 dif = foodPieces[i].transform.position - transform.position;
       float l = dif.magnitude;
+      float close = foodPieces[i].GetComponent<Food>().closeness;
+      if( l < close ){
+        foodPieces[i].GetComponent<Food>().closeness = l;
+      }
+      foodPieces[i].GetComponent<Food>().sensingRadius = sensingRadius;
       if( l < sensingRadius ){
         dif.Normalize();
         rb.AddForce(dif);
@@ -41,7 +46,8 @@ public class LookForFood : MonoBehaviour {
   
   void OnCollisionEnter(Collision col){
     if( col.gameObject.tag == "Food" ){
-      Destroy(col.gameObject);
+      col.gameObject.GetComponent<Food>().DestroyMe();
+      //Destroy(col.gameObject);
     }
 
   }

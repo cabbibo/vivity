@@ -141,9 +141,9 @@ public class Tube : MonoBehaviour
             float u = uvX * 2.0f * Mathf.PI;
             float v = uvY * 2.0f * Mathf.PI;
 
-            float xV = Random.Range(-.1f, .1f);
-            float zV = Random.Range(-.1f, .1f);
-            float yV = Random.Range(-.1f, .1f);
+            float xV = Random.Range(-.3f, .3f);
+            float zV = Random.Range(-.3f, .3f);
+            float yV = Random.Range(-.3f, .3f);
             yV += 1.25f;
 
             // /xV  = uvX / 10;
@@ -159,9 +159,9 @@ public class Tube : MonoBehaviour
 
             //pos
             // need to be slightly different to not get infinte forces
-            inValues[index++] = xV * 1.1f;
-            inValues[index++] = yV * 1.1f;
-            inValues[index++] = zV * 1.1f;
+            inValues[index++] = xV * .2f;
+            inValues[index++] = yV * .2f;
+            inValues[index++] = zV * .2f;
            
             //vel
             inValues[index++] = Random.Range(-.01f , .01f );
